@@ -1,0 +1,11 @@
+h1, div, input {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 40px;
+}
+
+input {
+  width: 220px;
+}
