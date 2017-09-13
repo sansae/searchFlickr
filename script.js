@@ -32,7 +32,7 @@ $(window).on("scroll", function(){
   var viewportHeight = $(window).height();
   var scrollTop = $(window).scrollTop();
   var difference = docHeight - viewportHeight;
-  if (difference == scrollTop) {
+  if (difference <= scrollTop) {
     page++;
     api = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=e1dc435f246930fe0e8bef843fa19ad3&format=json&tags=" + userInput + "&page=" + page;
     $.ajax({
